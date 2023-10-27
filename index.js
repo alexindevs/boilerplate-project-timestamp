@@ -71,9 +71,9 @@ app.get('/api/:date?', function (req, res) {
 
 
 
-// listen for requests :)
-// var listener = app.listen(process.env.PORT, function () {
-//   console.log('Your app is listening on port ' + listener.address().port);
-// });
+//listen for requests :)
+var listener = app.listen(process.env.PORT, function () {
+     console.log('Your app is listening on port ' + listener.address().port);
+});
 
 module.exports = app;
